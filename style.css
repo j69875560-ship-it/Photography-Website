@@ -136,6 +136,10 @@ section {
   border: none;
   padding: 0;
   background: none;
+  transition: 0.3s ease;
+}
+#biography:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 #biography img {
   width: 160px;
@@ -162,6 +166,7 @@ section {
   color: #555;
   max-width: 600px;
   margin: 0 auto 16px auto;
+  justify-content: center;
 }
 #contact {
   background-color: whitesmoke;
