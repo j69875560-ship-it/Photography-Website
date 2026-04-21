@@ -1,186 +1,187 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:rgb(255, 215, 0, 0.1);
-    color:black;
-    height: 100%;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 215, 0, 0.1);
+  color: black;
+  height: 100%;
 }
 header {
-    background-color:gold;
-    color:rgb(49, 48, 48);
-    text-align:center;
-    padding: 8px;
-    border: 1px solid gold
-    border-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  background-color: gold;
+  color: rgb(49, 48, 48);
+  text-align: center;
+  padding: 8px;
+  border: 1px solid gold;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
 }
-nav{
-    background-color:rgb(82, 82, 82);
-    display:flex;
-    justify-content:center;
-    text-decoration:none;
+nav {
+  background-color: rgb(82, 82, 82);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
-nav ul{
-    list-style-type:none;clear
-    display:flex;
-    padding:6px
+nav ul {
+  list-style-type: none;
+  color: gold;
+  display: flex;
+  padding: 6px;
 }
-nav ul li{
-    margin:8px 12px;
-    padding:6px;
-    font-size:18px;
+nav ul li {
+  margin: 8px 12px;
+  padding: 6px;
+  font-size: 18px;
 }
-nav ul li a{
-    color:gold;
-    text-decoration:none;
-}   
+nav ul li a {
+  color: gold;
+  text-decoration: none;
+}
 section {
-    padding: 20px;
-    border: 1px solid black;
-    margin: 20px;
-    border-radius: 8px;
-    background-color: rgb(255, 255, 255, 0.8);
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255, 0.8);
 }
 #home {
-    background-color:rgb(255, 255, 255, 0.8);
-
+  background-color: rgb(255, 255, 255, 0.8);
 }
-#home h2{
-    color:rgb(82, 82, 82);
+#home h2 {
+  color: rgb(82, 82, 82);
 }
-#home span a{
-    text-decoration:none;
-    color:inherit;
+#home span a {
+  text-decoration: none;
+  color: inherit;
 }
-.gallery{
-column-count: 3;
-column-gap: 16px;
-padding:16px;
-max-width: 1200px;
-margin: 0 auto;
+.gallery {
+  column-count: 3;
+  column-gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .grid-item {
-    break-inside: avoid;
-    margin-bottom: 16px;
-    display:block;
-    text-decoration:none;
-    border-radius:12px;
-    overflow:hidden;
-    background:#f0f0f0;
-    transition: 0.2s ease;
+  break-inside: avoid;
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+  transition: 0.2s ease;
 }
 .grid-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 .grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius:0;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
 }
 .pin-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 12px 14px;
-    font-size: 14px;
-    line-height: 1.4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.4;
 }
 @media (max-width: 900px) {
-    .gallery {
-        column-count: 2;
-    }
+  .gallery {
+    column-count: 2;
+  }
 }
 @media (max-width: 600px) {
-    .gallery {
-        column-count: 1;
-        padding:8px;
-        column-gap:8px;
-    } 
+  .gallery {
+    column-count: 1;
+    padding: 8px;
+    column-gap: 8px;
+  }
 }
-.grid-item{
-    margin-bottom:8px;
-    position:relative;
+.grid-item {
+  margin-bottom: 8px;
+  position: relative;
 }
 .grid-item::after {
-    content: "";
-    position: absolute;
-    inset:0;
-    background-color: rgba(0, 0, 0, 0);
-    opacity: 0;
-    transition: background  0.3s ease;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: background 0.3s ease;
 }
 .grid-item:hover::after {
-    background:rgba(0,0,0,0.1);
-}   
+  background: rgba(0, 0, 0, 0.1);
+}
 #about {
-    background-color:#fff;
-    padding:60px 20px;
-    max-width:800px;
-    margin: 0 auto;
-    padding:80px 20px;
-    text-align: center;
-}  
-#about h2{
-    color:#222;
-    font-weight:700;
-    font-size: 32px;
-    margin-bottom:40px;
+  background-color: #fff;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+#about h2 {
+  color: #222;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 #biography {
-    box-shadow:none;
-    border:none;
-    padding:0;
-    background:none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  background: none;
 }
 #biography img {
-    width:160px;
-    height: 160px;
-    border-radius: 50%;
-    margin: 0 auto 24px auto;
-    display: block;
-    object-fit:cover;
-    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 #biography h3 {
-    font-size: 24px;
-    color:#333;
-    margin-bottom:20px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 #biography p {
-    font-size: 17px;
-    line-height: 1.8;
-    color:#555;
-    max-width:600px;
-    margin:0 auto 16px auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 16px auto;
 }
 #contact {
-    background-color:whitesmoke}
-    #contact button{
-    background-color:gold;
-    color:rgb(49, 48, 48);
-    border:none;
-    padding:10px 20px;  
-    font-size:16px;
-    cursor:pointer;
-    }
-#contact button:hover{
-    background-color:rgb(255, 215, 0, 0.8);
-    }
-#message{
-    border:1px solid black;
-    }
+  background-color: whitesmoke;
+}
+#contact button {
+  background-color: gold;
+  color: rgb(49, 48, 48);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#contact button:hover {
+  background-color: rgb(255, 215, 0, 0.8);
+}
+#message {
+  border: 1px solid black;
+}
 footer {
-    background-color:gold;
-    color:rgb(49, 48, 48);
-    text-align:center;
-    padding: 10px;
-    border: 1px solid gold;
-    border-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    bottom: 0;
+  background-color: gold;
+  color: rgb(49, 48, 48);
+  text-align: center;
+  padding: 10px;
+  border: 1px solid gold;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  bottom: 0;
 }
