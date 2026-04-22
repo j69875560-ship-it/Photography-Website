@@ -76,52 +76,68 @@
         <h3>My Biography</h3>
         <p>
           My name is Johncarlos Mwenda, I am a human being.<br />I have likes
-          and dislikes like everyone else.<br />I was born in kenya and I have lived
-          here all my life.<br />I was born in this current century am the
+          and dislikes like everyone else.<br />I was born in kenya and I have
+          lived here all my life.<br />I was born in this current century am the
           oldest sibling in my family and I have one younger sister who knows to
-          cook better than I do.<br />I am really excited to be learning software
-          development and I hope to be a great software developer in the future
-          with multiple skills in different tech fields.<br />
+          cook better than I do.<br />I am really excited to be learning
+          software development and I hope to be a great software developer in
+          the future with multiple skills in different tech fields.<br />
         </p>
       </div>
       <p></p>
     </section>
     <!-- This is the contact section -->
     <section id="contact" class="contact-section">
-      <h2>Contact Me</h2>
-      <p>
-        If you have any questions or simply want to contact me and ask any
-        questions filling in the form below and send your message.
-      </p>
-      <form onsubmit="sendEmail(event)">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br /><br />
-        <button type="submit">Send Message</button>
-      </form>
-      <script>
-        function sendEmail(event) {
-          event.preventDefault();
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-          var subject = "contact from " + name;
-          var body =
-            "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
-          window.location.href =
-            "mailto:johncarlos.mwenda@student.moringaschool.com?subject=" +
-            encodeURIComponent(subject) +
-            "&body=" +
-            encodeURIComponent(body);
-          alert(`Thank you, ${name}! Your message has been sent.`);
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("message").value = "";
-        }
-      </script>
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">
+          If you have any questions or simply want to contact me and ask any
+          questions filling in the form below and send your message.
+        </p>
+        <form
+          action="https://formspree.io/f/xkokpgwb"
+          method="post"
+          class="contact-form"
+        >
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name">Name: <span class="required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email">Email: <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="message"
+              >Message: <span class="required">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
     </section>
   </body>
   <footer>
