@@ -211,7 +211,7 @@ section {
   background-color: white;
   max-width: 500px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align:left;
@@ -256,6 +256,7 @@ section {
   color:#aaa;
 }
 .submit-btn{
+  height: 50px;
   width:100%;
   padding:15px 30px;
   background: linear-gradient(135deg,gold 0%, gold 100%);
@@ -267,6 +268,9 @@ section {
   cursor: pointer;
   transition: all 0.3s;
   margin-top:10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .submit-btn:active {
   transform: translateY(0);
