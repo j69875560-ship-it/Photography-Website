@@ -90,12 +90,18 @@ section {
   font-size: 14px;
   line-height: 1.4;
 }
-@media (max-width: 900px) {
+@media  screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
   .gallery {
     column-count: 2;
   }
 }
-@media (max-width: 600px) {
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
   .gallery {
     column-count: 1;
     padding: 8px;
